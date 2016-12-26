@@ -1,0 +1,17 @@
+q {
+    display: block;
+    border-left: 10px solid #1394AC;
+    padding: 0 0 0 30px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.paragraph {
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    min-height: 1px;
+}

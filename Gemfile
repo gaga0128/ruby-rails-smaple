@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.0'
+gem 'rails', '~> 5.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg', group: :production
 # Use SCSS for stylesheets
@@ -27,7 +27,7 @@ gem 'rails_12factor', group: :production
 gem 'puma'
 
 # Locales
-gem 'rails-i18n', '~> 5.0.0'
+gem 'rails-i18n', '~> 5.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -47,3 +47,41 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+
+  gem 'rubocop' # to check Ruby code
+  gem 'scss-lint' # to check SCSS code
+
+  gem 'phare' # check for coding style errors
+end
+
+# Add compatibility with jquery
+gem 'jquery-turbolinks', '~> 2.1'
+
+# ActiveAdmin
+gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin'
+gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
+gem 'devise'
+gem 'devise-i18n'
+gem "active_material", github: "vigetlabs/active_material" # , branch: 'nh-responsive-redesign'
+
+# WYSIWYG for activeadmin
+gem 'ckeditor'
+
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+gem "mini_magick"
+
+# Menu DSL
+gem "navigator"
+
+# Email validator
+gem 'validates_email_format_of'
+
+# Meta tags
+gem 'meta-tags'
+
+# Error pages
+gem 'gaffe'
