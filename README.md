@@ -2,6 +2,13 @@
 
 This is a simple Ruby app using the [Rails](http://rubyonrails.org) framework.
 
+## Versions
+
+- [Admin version](https://github.com/kefiriaus/ruby-rails-sample/tree/master)
+- [Landing page with external auth API](https://github.com/kefiriaus/ruby-rails-sample/tree/external-api-auth)
+
+## Admin version
+
 Added gems:
 ```ruby
 # Add compatibility with jquery
